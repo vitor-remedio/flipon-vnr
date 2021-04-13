@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rh7(w!5c9z^81-&3trrjj_xelr)=9yl%b!7r&(ikg#!%$p&tmq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['flipon-vnr.herokuapp.com']
 
