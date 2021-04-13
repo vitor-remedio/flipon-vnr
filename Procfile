@@ -1,0 +1,1 @@
+web: gunicorn flipon.wsgi --log-file -
