@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Flipon - Dados</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <center>
+    <h1>Contato</h1>
+    </center>
+
+    <h2>Vitor Neodini Remedio</h2>
+    <p>Idade: 28 anos<br>Araras, São Paulo</p>
+    <p>Formação: Engenharia de Biossistemas, 2017<br></p>
+    <br>
+    <h3>Última experiência Profisisonal</h3>
+    <p><i><b>Analista de Tecnologia da Informação e Programação na empresa Colpani Fish Grill</b></i> (2018-2020)<br>
+        Responsável por projetar e configurar redes de computadores, dar orientações de apoio, monitorar o
+        desempenho do sistema e desenvolver planilhas e programas de controle financeiro e controle de mesas.</p>
+
+    <p><i><b>Bolsista do Programa Unificado de Bolsas – “Desenvolvimento de sensores de umidade e salinidade no solo
+            para aplicação em agricultura” – Orientador: Prof. Dr. Clóvis Fischer</b></i> (2016-2017)<br>
+        Responsável pelo desenvolvimento dos sensores, cotação de preços e contato com fornecedores, desenho e
+        estruturação dos sensores, manufatura e análises dos resultados..</p>
+
+
+    <h3>Cursos Relevantes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Curso</th>
+                <th>Ano</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for curso in cursos %}
+            <tr>
+                <td>{{curso.nome}}</td>
+                <td>{{curso.ano}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+
+</body>
+</html>

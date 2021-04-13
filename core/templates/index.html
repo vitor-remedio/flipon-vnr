@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Flipon</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <center>
+    <img src="{%static 'images/django.png' %}"
+        width="75"
+        height="75">
+    <h1>{{ desafio }}</h1>
+    <h3>{{descricao}}</h3>
+
+    <button><a href="/contato">Informações de Contato</a></button>
+    <button><a href="/curriculo">Currículo como Imagem</a></button>
+    </center>
+</body>
+</html>
